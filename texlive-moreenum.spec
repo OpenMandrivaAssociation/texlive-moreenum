@@ -1,3 +1,9 @@
+# revision 23239
+# category Package
+# catalog-ctan /macros/latex/contrib/moreenum
+# catalog-date 2011-07-18 09:05:38 +0200
+# catalog-license lppl1.3
+# catalog-version 1.01
 Name:		texlive-moreenum
 Version:	1.01
 Release:	1
@@ -55,6 +61,7 @@ are widely available.
 %doc %{_texmfdistdir}/doc/latex/moreenum/README
 %doc %{_texmfdistdir}/doc/latex/moreenum/testcase-moreenum.pdf
 %doc %{_texmfdistdir}/doc/latex/moreenum/testcase-moreenum.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ are widely available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
