@@ -1,11 +1,11 @@
-# revision 23239
+# revision 24479
 # category Package
 # catalog-ctan /macros/latex/contrib/moreenum
-# catalog-date 2011-07-18 09:05:38 +0200
+# catalog-date 2011-11-03 12:59:01 +0100
 # catalog-license lppl1.3
-# catalog-version 1.01
+# catalog-version 1.03
 Name:		texlive-moreenum
-Version:	1.01
+Version:	1.03
 Release:	1
 Summary:	More enumeration options
 Group:		Publishing
@@ -60,8 +60,8 @@ are widely available.
 %files
 %{_texmfdistdir}/tex/latex/moreenum/moreenum.sty
 %doc %{_texmfdistdir}/doc/latex/moreenum/README
-%doc %{_texmfdistdir}/doc/latex/moreenum/testcase-moreenum.pdf
-%doc %{_texmfdistdir}/doc/latex/moreenum/testcase-moreenum.tex
+%doc %{_texmfdistdir}/doc/latex/moreenum/moreenum-doc.pdf
+%doc %{_texmfdistdir}/doc/latex/moreenum/moreenum-doc.tex
 %doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
