@@ -6,7 +6,7 @@
 # catalog-version 1.03
 Name:		texlive-moreenum
 Version:	1.03
-Release:	6
+Release:	7
 Summary:	More enumeration options
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moreenum
