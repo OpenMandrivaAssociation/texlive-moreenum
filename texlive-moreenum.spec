@@ -1,18 +1,12 @@
-# revision 24479
-# category Package
-# catalog-ctan /macros/latex/contrib/moreenum
-# catalog-date 2011-11-03 12:59:01 +0100
-# catalog-license lppl1.3
-# catalog-version 1.03
 Name:		texlive-moreenum
-Version:	1.03
-Release:	12
+Version:	24479
+Release:	1
 Summary:	More enumeration options
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moreenum
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -39,12 +33,12 @@ alphalph, enumitem (of course), binhex and nth, all of which
 are widely available.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -55,28 +49,10 @@ are widely available.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.03-2
-+ Revision: 754103
-- Rebuild to reduce used resources
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.03-1
-+ Revision: 729684
-- texlive-moreenum
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.01-1
-+ Revision: 719059
-- texlive-moreenum
-- texlive-moreenum
-- texlive-moreenum
-- texlive-moreenum
-
