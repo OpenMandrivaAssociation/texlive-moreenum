@@ -1,6 +1,6 @@
 Name:		texlive-moreenum
 Version:	24479
-Release:	1
+Release:	2
 Summary:	More enumeration options
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moreenum
