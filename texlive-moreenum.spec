@@ -3,7 +3,7 @@ Version:	24479
 Release:	2
 Summary:	More enumeration options
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moreenum
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/moreenum
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moreenum.doc.r%{version}.tar.xz
